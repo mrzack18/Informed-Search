@@ -1,42 +1,42 @@
-# Informed-Search
+# Informed Search
 
-Informed Search, also known as Heuristic Search, is a type of search algorithm that uses domain-specific knowledge (heuristics) to find solutions more efficiently than uninformed search methods. This repository demonstrates two popular informed search algorithms:
+Informed Search, nu disebut ogé Heuristic Search, nyaéta algoritma nu make pangaweruh khusus (heuristic) pikeun manggihan solusi leuwih éfisién tibatan metode search nu teu make informasi tambahan (uninformed search). Ieu repository nembongkeun dua algoritma search informed anu kawentar:  
 
-## 1. A* (A-Star) Search
-A* Search combines the benefits of both Uniform Cost Search and Greedy Best-First Search. It uses:
-- Path cost from start node (g(n))
-- Heuristic estimate to goal (h(n))
-- Total cost f(n) = g(n) + h(n)
+## 1. A* (A-Star) Search  
+A* Search ngahijikeun kaunggulan tina Uniform Cost Search jeung Greedy Best-First Search. Algoritma ieu make:  
+- **g(n)**: Biaya ti node awal ka node ayeuna  
+- **h(n)**: Estimasi heuristic jarak ka tujuan  
+- **f(n) = g(n) + h(n)**: Total biaya nu dipaké keur milih jalur  
 
-Features:
-- Complete: Always finds a solution if one exists
-- Optimal: Guarantees the shortest path
-- More efficient than uninformed search algorithms
+### Fitur-fitur A* Search:  
+- **Komplit**: Salawasna manggihan solusi mun aya jalanna  
+- **Optimal**: Mastikeun jalur pangpondokna  
+- **Leuwih éfisién** batan algoritma uninformed  
 
-## 2. Greedy Best-First Search
-A search algorithm that uses heuristic function to estimate the cost from current node to goal. It:
-- Always expands the node closest to the goal
-- Makes locally optimal choices
-- Is faster but doesn't guarantee the shortest path
+## 2. Greedy Best-First Search  
+Greedy Best-First Search nyaeta algoritma nu make heuristic pikeun ngira-ngira jarak ka tujuan. Algoritma ieu:  
+- Salawasna milih node nu pangdeukeutna ka tujuan  
+- Nyokot kaputusan optimal dina tingkat lokal  
+- Gancang, tapi teu salawasna manggihan jalur pangpondokna  
 
-### Implementation Details
-Both algorithms are implemented using:
-- Priority Queue for frontier management
-- Dictionary/HashMap for graph representation
-- Heuristic functions for distance estimation
+## Detil Implementasi  
+Kadua algoritma ieu diimplementasikeun make:  
+- **Priority Queue** pikeun ngatur frontier  
+- **Dictionary/HashMap** pikeun ngawakilan graph  
+- **Fungsi heuristic** pikeun estimasi jarak  
 
-### Example Graph Structure
-The implementations use a graph with:
-- Nodes: S (Start), A, B, C, D, G (Goal)
-- Heuristic values for each node
-- Edge connections with associated costs (for A*)
+## Struktur Graph Conto  
+Implementasi make graph nu diwangun ku:  
+- **Node**: S (Mimitian), A, B, C, D, G (Tujuan)  
+- **Nilai heuristic** keur tiap node  
+- **Sambungan node** jeung biaya perjalanan (pikeun A*)  
 
-### Usage
-The repository contains Jupyter notebooks demonstrating both algorithms:
-- `a_star_search.ipynb`: Implementation of A* Search
-- `greedy_best_first_search.ipynb`: Implementation of Greedy Best-First Search
+## Pamakean  
+Repository ieu ngandung notebook Jupyter pikeun tiap algoritma:  
+- `a_star_search.ipynb`: Implementasi A* Search  
+- `greedy_best_first_search.ipynb`: Implementasi Greedy Best-First Search  
 
-Each notebook includes:
-- Algorithm implementation
-- Graph representation
-- Example execution with results
+Unggal notebook ngandung:  
+- Implementasi algoritma  
+- Representasi graph  
+- Conto éksekusi jeung hasilna  
